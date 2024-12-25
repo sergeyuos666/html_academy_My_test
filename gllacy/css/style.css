@@ -388,6 +388,10 @@ img {
   font-size: 30px;
 }
 
+.goods__item-description {
+  font-weight: 400;
+}
+
 /* seo */
 
 .seo {
@@ -642,3 +646,99 @@ img {
 }
 
 /* inner */
+.inner-page {
+  color: #fff;
+}
+.breadcrumbs__list {
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumbs__item .link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.breadcrumbs__list .breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+
+  background-image: url(../svg/icon-right-small.svg),
+    url(../svg/icon-right-small.svg); /* Дві іконки */
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left, center right; /* Позиція першої і другої іконки */
+  background-size: 8px 12px, 8px 12px; /* Розміри кожної іконки */
+
+  width: 12px; /* Загальна ширина псевдоелемента */
+  height: 8px; /* Висота іконки */
+
+  margin-left: 5px; /* Відступ від тексту до іконок */
+}
+
+.main-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+/* filter */
+
+.filters {
+  margin-bottom: 50px;
+}
+.filter-goods-form {
+  display: flex;
+  width: 860px;
+  flex-wrap: wrap;
+}
+
+/* goods */
+.goods {
+  margin-bottom: 50px;
+}
+.goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 50px;
+}
+
+.pagination__list {
+  display: flex;
+
+  gap: 10px;
+}
+
+.pagination__item {
+  font-weight: 500;
+}
+
+.btn-pagination {
+  width: 8px;
+  height: 12px;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-pagination path {
+  fill: #fff;
+}
+
+.back {
+  transform: rotate(180deg);
+  margin-top: 2px;
+}
+
+.go {
+  margin-top: -4px;
+}

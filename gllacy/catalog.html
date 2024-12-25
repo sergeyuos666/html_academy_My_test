@@ -98,15 +98,19 @@
     <main class="inner-page container">
       <section class="breadcrumbs">
         <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">Главная</li>
-          <li class="breadcrumbs__item">Каталог</li>
-          <li class="breadcrumbs__item">Сливочное</li>
+          <li class="breadcrumbs__item">
+            <a href="./index.html" class="link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="./catalog.html" class="link">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item"><span class="link">Сливочное</span></li>
         </ul>
       </section>
       <h1 class="main-title">Сливочное мороженое</h1>
 
       <section class="filters">
-        <form action="POST">
+        <form action="POST" class="filter-goods-form">
           <fieldset class="filters-sorting">
             <legend class="filters-sorting__name">Сортировка:</legend>
             <input
@@ -302,7 +306,7 @@
       </section>
 
       <section class="pagination">
-        <button>
+        <button class="btn-pagination back">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="8"
@@ -317,22 +321,22 @@
         </button>
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a href="#">1</a>
+            <a href="#" class="link">1</a>
           </li>
           <li class="pagination__item">
-            <a href="#">2</a>
+            <a href="#" class="link">2</a>
           </li>
           <li class="pagination__item">
-            <a href="#">3</a>
+            <a href="#" class="link">3</a>
           </li>
           <li class="pagination__item">
-            <a href="#">4</a>
+            <a href="#" class="link">4</a>
           </li>
           <li class="pagination__item">
-            <a href="#">5</a>
+            <a href="#" class="link">5</a>
           </li>
         </ul>
-        <button>
+        <button class="btn-pagination go">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="8"
