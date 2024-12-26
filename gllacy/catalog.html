@@ -119,6 +119,7 @@
               name="sorting"
               list="sorting-options"
               placeholder="Оберіть варіант"
+              class="filters_bg"
             />
             <datalist class="filters-sorting__datalist" id="sorting-options">
               <option value="по популярности">по популярности</option>
@@ -132,7 +133,7 @@
               Цена: <span id="price-min">100</span> руб. –
               <span id="price-max">500</span> руб.
             </legend>
-            <div class="range-slider">
+            <div class="range-slider filters_bg">
               <input
                 type="range"
                 id="range-min"
@@ -153,56 +154,60 @@
           </fieldset>
           <fieldset class="fat-content">
             <legend>Жирность:</legend>
-            <lable for="0-procent">
-              <span></span>
-              <input type="radio" id="0-procent" />
-              0%
-            </lable>
-            <lable for="10-procent">
-              <span></span>
-              <input type="radio" id="10-procent" />
-              до 10%
-            </lable>
-            <lable for="30-procent">
-              <span></span>
-              <input type="radio" id="30-procent" checked />
-              до 30%
-            </lable>
-            <lable for="more-procent">
-              <span></span>
-              <input type="radio" id="more-procent" />
-              больше 30%
-            </lable>
+            <div class="filters_bg">
+              <lable for="0-procent">
+                <span></span>
+                <input type="radio" id="0-procent" />
+                0%
+              </lable>
+              <lable for="10-procent">
+                <span></span>
+                <input type="radio" id="10-procent" />
+                до 10%
+              </lable>
+              <lable for="30-procent">
+                <span></span>
+                <input type="radio" id="30-procent" checked />
+                до 30%
+              </lable>
+              <lable for="more-procent">
+                <span></span>
+                <input type="radio" id="more-procent" />
+                больше 30%
+              </lable>
+            </div>
           </fieldset>
           <fieldset class="fillers">
             <legend>Наполнители:</legend>
-            <lable for="chocolate">
-              <span></span>
-              <input type="checkbox" id="chocolate" checked />
-              шоколадные
-            </lable>
-            <lable for="sugar-sprinkles">
-              <span></span>
-              <input type="checkbox" id="sugar-sprinkles" checked />
-              сахарные присыпки
-            </lable>
-            <lable for="fruit">
-              <span></span>
-              <input type="checkbox" id="fruit" />
-              фрукты
-            </lable>
-            <lable for="syrups">
-              <span></span>
-              <input type="checkbox" id="syrups" />
-              сиропы
-            </lable>
-            <lable for="jams">
-              <span></span>
-              <input type="checkbox" id="jams" />
-              джемы
-            </lable>
+            <div class="filters_bg">
+              <lable for="chocolate">
+                <span></span>
+                <input type="checkbox" id="chocolate" checked />
+                шоколадные
+              </lable>
+              <lable for="sugar-sprinkles">
+                <span></span>
+                <input type="checkbox" id="sugar-sprinkles" checked />
+                сахарные присыпки
+              </lable>
+              <lable for="fruit">
+                <span></span>
+                <input type="checkbox" id="fruit" />
+                фрукты
+              </lable>
+              <lable for="syrups">
+                <span></span>
+                <input type="checkbox" id="syrups" />
+                сиропы
+              </lable>
+              <lable for="jams">
+                <span></span>
+                <input type="checkbox" id="jams" />
+                джемы
+              </lable>
+            </div>
           </fieldset>
-          <button type="submit">Применить</button>
+          <button type="submit" class="filters_bg">Применить</button>
         </form>
       </section>
 

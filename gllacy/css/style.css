@@ -694,6 +694,17 @@ img {
   flex-wrap: wrap;
 }
 
+.filters_bg {
+  width: 192px;
+  height: 37px;
+
+  padding-top: 6px;
+
+  border-radius: 17px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* goods */
 .goods {
   margin-bottom: 50px;
