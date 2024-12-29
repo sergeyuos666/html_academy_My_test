@@ -23,20 +23,34 @@
             /></a>
           </li>
           <li class="nav-menu__item">
-            <a href="./catalog.html" class="link">Каталог</a>
+            <a href="./catalog.html" class="link nav-link catalog__btn"
+              >Каталог</a
+            >
 
             <ul class="nav-menu__item-catalig-list visually-hidden">
-              <li class="nav-menu__item-catalig-item">Новинки</li>
-              <li class="nav-menu__item-catalig-item">Сливочное</li>
-              <li class="nav-menu__item-catalig-item">Щербеты</li>
-              <li class="nav-menu__item-catalig-item">Фруктовый лед</li>
-              <li class="nav-menu__item-catalig-item">Мелорин</li>
+              <li class="nav-menu__item-catalig-item">
+                <a href="#" class="link nav-link-item">Новинки</a>
+              </li>
+              <li class="nav-menu__item-catalig-item">
+                <a href="#" class="link nav-link-item to-second">Сливочное</a>
+              </li>
+              <li class="nav-menu__item-catalig-item">
+                <a href="#" class="link nav-link-item">Щербеты</a>
+              </li>
+              <li class="nav-menu__item-catalig-item">
+                <a href="#" class="link nav-link-item">Фруктовый лед</a>
+              </li>
+              <li class="nav-menu__item-catalig-item">
+                <a href="#" class="link nav-link-item">Мелорин</a>
+              </li>
             </ul>
           </li>
           <li class="nav-menu__item">
-            <a href="" class="link">Доставка и оплата</a>
+            <a href="#" class="link nav-link">Доставка и оплата</a>
           </li>
-          <li class="nav-menu__item"><a href="" class="link">О Компании</a></li>
+          <li class="nav-menu__item">
+            <a href="#" class="link nav-link">О Компании</a>
+          </li>
         </ul>
         <ul class="second-nav__list">
           <li class="second-nav__item">
@@ -201,7 +215,7 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider__list">
-          <li class="slider__item">
+          <li class="slider__item ls-1">
             <div class="slider__img-cover">
               <img src="./img/Мороженко 1.png" alt="" />
               <img src="./img/Мороженко 2.png" alt="" />
@@ -213,7 +227,7 @@
               <a href="" class="slider__item-btn btn">Давайте оба!</a>
             </div>
           </li>
-          <li class="slider__item visually-hidden">
+          <li class="slider__item ls-2 visually-hidden">
             <div class="slider__img-cover">
               <img src="./img/Мороженко 3.png" alt="" />
               <img src="./img/Мороженко 4.png" alt="" />
@@ -225,7 +239,7 @@
               <a href="" class="slider__item-btn btn">Давайте оба!</a>
             </div>
           </li>
-          <li class="slider__item visually-hidden">
+          <li class="slider__item ls-3 visually-hidden">
             <div class="slider__img-cover">
               <img src="./img/Мороженко 5.png" alt="" />
               <img src="./img/Мороженко 6.png" alt="" />
@@ -493,7 +507,7 @@
             href="./index.html"
             target="_blank"
             rel="noopener noreferrer"
-            class=""
+            class="second-link"
             >10 способов сервировки фруктовых щербетов к столу</a
           >
         </div>
@@ -533,13 +547,16 @@
               <a
                 href="https://maps.google.com/?q=ул.+Большая+Конюшенная+19/8,+Санкт-Петербург"
                 target="_blank"
-                class="link"
+                class="link second-link"
               >
                 ул. Большая Конюшенная 19/8, Санкт-Петербург
               </a>
             </address>
             <p>Для заказов по телефону:</p>
-            <a href="tel: +88124502525" type="" class="link map-secion__link"
+            <a
+              href="tel: +88124502525"
+              type=""
+              class="link map-secion__link second-link"
               >8 812 450-25-25
             </a>
             <p class="map-secion__time-work">(с 10 до 20 ежедневно)</p>
@@ -646,19 +663,25 @@
           <li class="footer__info-link">
             <a href="" class="footer__info-link link">
               <p class="footer__info-link-title">
-                <span class="footer-heard"></span> Для поставщиков
+                <a href="#" class="second-link"
+                  ><span class="footer-heard"></span> Для поставщиков</a
+                >
               </p>
             </a>
           </li>
 
           <li class="footer__info-link">
-            <a href="" class="footer__info-link link">Наши документы</a>
+            <a href="" class="footer__info-link link second-link"
+              >Наши документы</a
+            >
           </li>
           <li class="footer__info-link">
-            <a href="" class="footer__info-link link">О производстве </a>
+            <a href="" class="footer__info-link link second-link"
+              >О производстве
+            </a>
           </li>
           <li class="footer__info-link">
-            <a href="" class="footer__info-link link"
+            <a href="" class="footer__info-link link second-link"
               >Экологические стандарты</a
             >
           </li>
@@ -720,6 +743,7 @@
     </div>
     <div class="overlay visually-hidden"></div>
 
-    <script src="js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

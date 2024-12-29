@@ -93,6 +93,21 @@ p {
   color: #fff;
 }
 
+.second-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.second-link:hover,
+.second-link:focus {
+  text-decoration: underline;
+  color: #e84d37ff;
+}
+.second-link:active {
+  text-decoration: underline;
+  color: #e84d37;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -112,12 +127,32 @@ img {
   text-align: center;
 
   color: #fff;
-
-  background: linear-gradient(to bottom, #e74a35, #f26843);
+  background-color: #e84d37;
+  background: linear-gradient(
+    to bottom,
+    rgba(231, 74, 53, 1),
+    rgba(242, 104, 67, 1)
+  );
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.1);
 
   border-radius: 40px;
   border: 0px solid transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e84d37;
+  background: linear-gradient(
+    to bottom,
+    rgba(231, 74, 53, 1) 20%,
+    rgba(242, 104, 67, 1) 80%
+  );
+}
+
+.btn:active {
+  background: linear-gradient(to bottom, rgb(241, 62, 38), rgb(214, 91, 57));
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
 }
 
 .btn-close {
@@ -184,12 +219,47 @@ img {
   line-height: 18px;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  display: block;
+
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  text-align: center;
+  line-height: 32px;
+
+  border-radius: 20px;
+  color: #000;
+  background-color: #dfdfdf;
+}
+.nav-link:active {
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+.to {
+  display: block;
+
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  text-align: center;
+  line-height: 32px;
+
+  border-radius: 11px;
+  background: linear-gradient(to bottom, #e74a35, #f26843);
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
 .nav-menu__item-catalig-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 
   font-weight: 400;
+
   position: absolute;
   top: 50px;
   left: 173px;
@@ -197,17 +267,48 @@ img {
   width: 144px;
   height: 172px;
 
-  padding: 15px 25px;
-  color: rgba(0, 0, 0, 1);
   background-color: #dfdfdf;
   border-radius: 5px;
 }
 
+.nav-link-item {
+  box-sizing: border-box;
+  display: block;
+  width: 145px;
+  height: 30px;
+
+  font-size: 13px;
+  font-weight: 400px;
+
+  padding: 2px 8px;
+  line-height: 30px;
+
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-menu__item-catalig-item:first-child {
+  font-weight: 600;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 .nav-menu__item-catalig-item:hover,
 .nav-menu__item-catalig-item:focus {
+  display: block;
   font-weight: 700;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fbded7;
+}
+
+.nav-menu__item-catalig-item:active {
+  background-color: #da8975;
+  border-bottom: none;
+}
+
+.to-second {
+  color: #fff;
+  background-color: #e7532e;
+  border-bottom: none;
 }
 
 .second-nav__list {
@@ -225,6 +326,25 @@ img {
 
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.second-nav__btn_search:focus,
+.second-nav__enter:focus,
+.second-nav__basket:focus,
+.second-nav__btn_search:hover,
+.second-nav__enter:hover,
+.second-nav__basket:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.second-nav__btn_search:focus path,
+.second-nav__enter:focus path,
+.second-nav__basket:focus path,
+.second-nav__btn_search:hover path,
+.second-nav__enter:hover path,
+.second-nav__basket:hover path {
+  fill: #000;
 }
 
 .second-nav__btn_search {
@@ -529,6 +649,11 @@ img {
   height: 21px;
   border: 2px solid white;
   border-radius: 10px;
+}
+
+.slider__btn-item .span:hover,
+.slider__btn-item .span:focus {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .baner {
@@ -839,6 +964,19 @@ img {
   gap: 15px;
 }
 
+.footer__social-item a path {
+  fill: #e9e8e8;
+}
+
+.footer__social-item a:hover path,
+.footer__social-item a:focus path {
+  fill: rgb(255, 255, 255);
+}
+
+.footer__social-item a:active path {
+  fill: rgb(185, 183, 183);
+}
+
 .footer__middle-cover {
   position: relative;
   width: 340px;
@@ -1104,9 +1242,14 @@ img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
   transition: border-color 0.3s, background-color 0.3s;
+}
+
+.fillers_fat__circle:hover,
+.fillers_fat__circle:focus {
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .fillers_fat__input:checked + .fillers_fat__circle::before {
@@ -1115,7 +1258,7 @@ img {
   width: 8px;
   height: 8px;
   border-radius: 50%; /* Округлення для "галочки" всередині */
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1123,14 +1266,33 @@ img {
   box-shadow: none;
 }
 
+.fillers_fat__input:hover + .fillers_fat__circle::before,
+.fillers_fat__input:focus + .fillers_fat__circle::before {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .fillers__btn {
   height: 34px;
   width: 134px;
-  margin-bottom: -6px;
-  /* padding-left: 24px;   */
+  margin-bottom: -5px;
+  padding-left: 24px;
 
   border: 2px solid #fff;
   color: #fff;
+}
+
+.fillers__btn:hover,
+.fillers__btn:focus {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.fillers__btn:active {
+  background-color: #dadada;
+  color: #000;
+  border: none;
 }
 
 .fillers__sklad-cover {
@@ -1157,6 +1319,18 @@ img {
 .checkbox-input:checked + .fillers-goods-form__span {
   background-image: url(../svg/checkbox-on.svg);
 }
+
+/* .checkbox-input:focus + .fillers-goods-form__span path,
+.checkbox-input:hover + .fillers-goods-form__span path {
+  color: rgba(255, 255, 0, 1);
+  background-color: rgba(255, 255, 0, 1);
+}
+
+.checkbox-input:focus + .fillers-goods-form__span,
+.checkbox-input:hover + .fillers-goods-form__span {
+  color: rgba(255, 255, 0, 1);
+  background-color: rgba(255, 255, 0, 1);
+} */
 
 .checkbox-input {
   position: absolute; /* Ховаємо чекбокс */
@@ -1218,6 +1392,27 @@ img {
 
 .pagination__item {
   font-weight: 500;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+}
+
+.pagination__item:hover,
+.pagination__item:focus {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__item:active {
+  border-radius: 50%;
+  color: black;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.pagination__item:active .link {
+  border-radius: 50%;
+  color: black;
 }
 
 .btn-pagination {
