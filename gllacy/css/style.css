@@ -1,3 +1,23 @@
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /* font  */
 
 .roboto-thin {
@@ -169,10 +189,10 @@ img {
   position: absolute;
 
   width: 1px;
-  height: 14px;
+  height: 16px;
 
   top: 0;
-  right: 43%;
+  right: -5px;
   transform: rotate(-45deg);
   background-color: black;
 }
@@ -181,11 +201,11 @@ img {
   position: absolute;
 
   width: 1px;
-  height: 14px;
+  height: 16px;
   transform: rotate(45deg);
 
   top: 0;
-  left: 42%;
+  right: -5px;
   background-color: black;
 }
 
@@ -194,6 +214,10 @@ img {
   margin: 0 auto;
 }
 
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.8s;
+}
 /* header  */
 
 .header {
@@ -381,8 +405,13 @@ img {
 .search-input {
   width: 310px;
   height: 44px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(230, 227, 227);
   border-radius: 6px;
+}
+
+.search-input:focus {
+  border: 1px solid rgba(182, 181, 181);
+  outline: none;
 }
 
 .placeholder-for-serarch {
@@ -419,6 +448,7 @@ img {
 
   background-color: #f8f7f4;
   border-radius: 6px;
+  z-index: 32px;
 }
 
 .login-window__form {
@@ -439,10 +469,17 @@ img {
   box-sizing: border-box;
   width: 222px;
   height: 42px;
-
+  padding-left: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
 }
+
+.login-window__form input[type="email"]:focus,
+.login-window__form input[type="password"]:focus {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
 .login-window__form-span {
   position: absolute;
   top: 12px;
@@ -529,6 +566,7 @@ img {
 
   background-color: #dfdfdf;
   border-radius: 4px;
+  z-index: 33;
 }
 
 .second-nav__basket_windows-list {
@@ -596,12 +634,15 @@ img {
 
 .slider__item {
   position: relative;
+  z-index: -2;
   margin: 0 auto;
   width: 680px;
 }
 
 .slider__img-cover {
   display: flex;
+  position: relative;
+  z-index: -1;
 }
 .slider__img-cover img:last-child {
   z-index: -1;
@@ -1073,13 +1114,19 @@ img {
 }
 
 .modal__form-input {
+  font-weight: 700;
   box-sizing: border-box;
   padding: 10px;
   width: 268px;
   height: 46px;
 
   border-radius: 5px;
-  border: 1px solid #c7c3c3;
+  border: 1px solid #ddd8d8;
+}
+
+.modal__form-input:focus {
+  border: 1px solid #b6b5b5;
+  outline: none;
 }
 
 .two {

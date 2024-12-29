@@ -100,16 +100,20 @@
                 Вход
               </button>
               <div class="second-nav__login-window visually-hidden">
-                <form action="" class="login-window__form">
+                <form
+                  class="login-window__form"
+                  method="post"
+                  action="https://echo.htmlacademy.ru/"
+                >
                   <label for="email"
                     ><input type="email" id="email" /><span
-                      class="login-window__form-span"
+                      class="login-window__form-span input-first"
                       >Электронная почта</span
                     ></label
                   >
                   <label for="password"
                     ><input type="password" id="password" /><span
-                      class="login-window__form-span"
+                      class="login-window__form-span input-first"
                       >Пароль</span
                     ></label
                   >
@@ -713,7 +717,11 @@
           <strong>Мы обязательно вам ответим!</strong>
           <button class="btn-close"></button>
         </div>
-        <form action="" class="modal__form">
+        <form
+          class="modal__form"
+          method="post"
+          action="https://echo.htmlacademy.ru/"
+        >
           <label for="modal__form-input-name"
             ><input
               type="text"
@@ -745,5 +753,6 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/input.js"></script>
   </body>
 </html>

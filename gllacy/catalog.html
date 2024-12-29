@@ -101,19 +101,20 @@
               <div class="second-nav__login-window visually-hidden">
                 <form action="" class="login-window__form">
                   <label for="email"
-                    ><input type="email" id="email" /><span
+                    ><input type="email" id="email" class="login__email" /><span
                       class="login-window__form-span"
                       >Электронная почта</span
                     ></label
                   >
                   <label for="password"
-                    ><input type="password" id="password" /><span
-                      class="login-window__form-span"
-                      >Пароль</span
-                    ></label
+                    ><input
+                      type="password"
+                      id="password"
+                      class="login__password"
+                    /><span class="login-window__form-span">Пароль</span></label
                   >
                   <div class="login-window__btn-cover">
-                    <button type="submit" class="btn">Войти</button>
+                    <button type="submit" class="btn login__btn">Войти</button>
                     <div class="login-window__link-cover">
                       <li class="link">Забыли пароль?</li>
                       <li class="link">Новая регистрация</li>
@@ -677,7 +678,7 @@
           <label for="modal__form-input-email"
             ><input
               type="email"
-              class="modal__form-input"
+              class="modal__form-input modal__form-email"
               id="modal__form-input-email"
               placeholder="Ваша почта для ответа?"
           /></label>
@@ -689,7 +690,7 @@
               placeholder="Напишите что-нибудь..."
           /></label>
           <div class="modal__btn-cover">
-            <button class="btn">Отправить</button>
+            <button class="btn modal__btn">Отправить</button>
           </div>
         </form>
       </div>
@@ -698,5 +699,6 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/input.js"></script>
   </body>
 </html>
