@@ -5,7 +5,7 @@ const formLogin = document.querySelector(".login-window__form");
 const enterBtn = document.querySelector(".second-nav__enter");
 
 const email = document.querySelector(".modal__form-email");
-const name = document.querySelector("#modal__form-input-name");
+const nameOil = document.querySelector("#modal__form-input-name");
 const text = document.querySelector("#modal__form-input-text");
 const formMessage = document.querySelector(".modal");
 const mapFormBtn = document.querySelector(".map-secion__btn");
@@ -45,10 +45,10 @@ if (mapFormBtn) {
     overlay.classList.toggle("visually-hidden");
 
     if (storageMessage) {
-      name.value = storageMessage;
+      nameOil.value = storageMessage;
       text.focus();
     } else {
-      name.focus();
+      nameOil.focus();
     }
   });
 }
@@ -76,12 +76,12 @@ if (formLogin) {
 
 if (modalForm) {
   modalForm.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
+    if (!nameOil.value || !email.value) {
       evt.preventDefault();
       modalForm.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
+        localStorage.setItem("name", nameOil.value);
         localStorage.setItem("email", email.value);
       }
     }
