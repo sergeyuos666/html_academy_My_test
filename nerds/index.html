@@ -8,97 +8,103 @@
   </head>
   <body class="body">
     <header class="header">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <img src="./img/nerds-logo.png" alt="" />
-        </li>
-        <li class="header__nav-item">
-          <ul class="header__second-nav-list">
-            <li class="header__second-nav-item">
-              <a href="#">Студия</a>
-            </li>
-            <li class="header__second-nav-item">
-              <a href="#">Клиенты</a>
-            </li>
-            <li class="header__second-nav-item">
-              <a href="#">Магазин</a>
-            </li>
-            <li class="header__second-nav-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="header__second-nav-item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </li>
-        <li class="header__nav-item">
-          <div class="header__cart">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
-              viewBox="0 0 15 15"
-            >
-              <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5" />
-              <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5" />
-              <path
-                fill="#a6a6a6"
-                d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"
-              />
-            </svg>
-            <p class="header__card-name">Корзина</p>
-            <span class="visually-hidden">0</span>
-          </div>
-        </li>
-      </ul>
+      <div class="header__cover">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="./index.html"><img src="./img/nerds-logo.png" alt="" /></a>
+          </li>
+          <li class="header__nav-item">
+            <ul class="header__second-nav-list">
+              <li class="header__second-nav-item">
+                <a href="#" class="link">Студия</a>
+              </li>
+              <li class="header__second-nav-item">
+                <a href="#" class="link">Клиенты</a>
+              </li>
+              <li class="header__second-nav-item">
+                <a href="./catalog.html" class="link">Магазин</a>
+              </li>
+              <li class="header__second-nav-item">
+                <a href="#" class="link">Гарантия</a>
+              </li>
+              <li class="header__second-nav-item">
+                <a href="#" class="link">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <div class="header__cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+              >
+                <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5" />
+                <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5" />
+                <path
+                  fill="#a6a6a6"
+                  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"
+                />
+              </svg>
+              <p class="header__card-name">Корзина</p>
+              <span class="visually-hidden">0</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main>
+    <main class="main container">
       <h1 class="visually-hidden">NEARDS</h1>
 
       <section class="slider">
         <h2 class="visually-hidden">slaider</h2>
-        <div class="slider__wrapper">
-          <ul class="slider__list">
-            <li class="slider-item">
-              <img src="./img/slide1.png" alt="" />
-              <div class="slider__text-cover">
-                <strong>Долго, дорого, скрупулезно.</strong>
-                <p>
-                  Математически выверенный дизайн для вашего сайта или мобильног
-                </p>
-                <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
-              </div>
-            </li>
-            <li class="slider-item">
-              <img src="./img/slide2.png" alt="" />
-              <div class="slider__text-cover">
-                <strong>Любим математику как никто другой</strong>
-                <p>
-                  Никакого креатива, только математические формулы для расчета и
-                </p>
-                <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
-              </div>
-            </li>
-            <li class="slider-item">
-              <img src="./img/slide3.png" alt="" />
-              <div class="slider__text-cover">
-                <strong>Только ночь, только хардкор</strong>
-                <p>
-                  Работать днем, как все? Мы против этого. Ближе к полуночи
-                  работ
-                </p>
-                <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="slider__controls">
-          <ul class="slider__controls-list">
-            <li class="slider__controls-item"><button></button></li>
-            <li class="slider__controls-item"><button></button></li>
-            <li class="slider__controls-item"><button></button></li>
-          </ul>
+        <div class="slider__cover">
+          <div class="slider__wrapper">
+            <ul class="slider__list">
+              <li class="slider-item">
+                <img src="./img/slide1.png" alt="" class="slider__img" />
+                <div class="slider__text-cover">
+                  <strong>Долго, дорого, скрупулезно.</strong>
+                  <p>
+                    Математически выверенный дизайн для вашего сайта или
+                    мобильног
+                  </p>
+                  <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
+                </div>
+              </li>
+              <li class="slider-item visually-hidden">
+                <img src="./img/slide2.png" alt="" class="slider__img" />
+                <div class="slider__text-cover">
+                  <strong>Любим математику как никто другой</strong>
+                  <p>
+                    Никакого креатива, только математические формулы для расчета
+                    и
+                  </p>
+                  <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
+                </div>
+              </li>
+              <li class="slider-item visually-hidden">
+                <img src="./img/slide3.png" alt="" class="slider__img" />
+                <div class="slider__text-cover">
+                  <strong>Только ночь, только хардкор</strong>
+                  <p>
+                    Работать днем, как все? Мы против этого. Ближе к полуночи
+                    работ
+                  </p>
+                  <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__controls">
+            <ul class="slider__controls-list">
+              <li class="slider__controls-item"><button></button></li>
+              <li class="slider__controls-item"><button></button></li>
+              <li class="slider__controls-item"><button></button></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -143,31 +149,40 @@
           <h2 class="about-studio__title">
             Мы — маленькая, но гордая дизайн-студия из Краснодара.
           </h2>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математически</p>
-          <strong>Выполняем заказы на разработку: </strong>
+          <p class="about-studio__text">
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <h4 class="about-studio__first-strong">
+            Выполняем заказы на разработку:
+          </h4>
           <ul class="about-studio__list">
-            <li class="about-studio__item">Веб-сайтов любой сложности</li>
             <li class="about-studio__item">
+              <span></span>Веб-сайтов любой сложности
+            </li>
+            <li class="about-studio__item">
+              <span></span>
               Мобильных приложений для iOS и Android
             </li>
             <li class="about-studio__item">
+              <span></span>
               Слайдшоу и видео для корпоративных презентаций
             </li>
           </ul>
         </div>
         <div class="about-studio__second-cover">
           <img src="./img/nerds-illustration.jpg.png" alt="" />
-          <p>с 2004 года Любим точность во всем:</p>
+          <p class="about-studio__text">с 2004 года Любим точность во всем:</p>
           <table>
             <tr>
-              <th>146%</th>
-              <th>100%</th>
-              <th>50%</th>
+              <th class="about-studio__tebel-strrong">146%</th>
+              <th class="about-studio__tebel-strrong">100%</th>
+              <th class="about-studio__tebel-strrong">50%</th>
             </tr>
             <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
+              <td class="about-studio__first-normal">Уровень самоотдачи</td>
+              <td class="about-studio__first-normal">Соблюдение сроков</td>
+              <td class="about-studio__first-normal">Минимальная предоплата</td>
             </tr>
           </table>
         </div>
@@ -192,13 +207,19 @@
 
       <section class="contact">
         <h2 class="visually-hidden">map</h2>
-        <img src="./img/map1.png" alt="" />
-        <img src="./img/map-marker.png.png" alt="" />
+        <div class="container-map">
+          <img src="./img/map1.png" alt="" width="100%" class="contact__img" />
+        </div>
+        <img src="./img/map-marker.png.png" alt="" class="contact__marker" />
         <div class="contact__cover">
           <h2 class="contact__title">NЁRDS DESIGN STUDIO</h2>
-          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a href="tel:+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a>
-          <button>Напишите нам</button>
+          <address class="contact__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+          <a href="tel:+7 (812) 275-75-75" class="link"
+            >тел. +7 (812) 275-75-75</a
+          >
+          <button class="btn">Напишите нам</button>
         </div>
       </section>
     </main>
@@ -206,12 +227,13 @@
     <footer class="footer">
       <div class="footer__first-cover">
         <ul class="footer__sochial-list">
-          <li class="footer__sochial-list">
+          <li class="footer__sochial-item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
               height="15"
               viewBox="0 0 26 15"
+              class="footer__sochial-icon"
             >
               <path
                 fill="#FFF"
@@ -219,12 +241,13 @@
               />
             </svg>
           </li>
-          <li class="footer__sochial-list">
+          <li class="footer__sochial-item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
               height="22"
               viewBox="0 0 12 22"
+              class="footer__sochial-icon"
             >
               <path
                 fill="#FFF"
@@ -232,12 +255,13 @@
               />
             </svg>
           </li>
-          <li class="footer__sochial-list">
+          <li class="footer__sochial-item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
               height="21"
               viewBox="0 0 21 21"
+              class="footer__sochial-icon"
             >
               <path
                 fill="#FFF"
