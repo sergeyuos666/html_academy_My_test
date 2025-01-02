@@ -309,6 +309,17 @@ section {
   justify-content: space-between;
 }
 
+.partner__item img {
+  opacity: 0.5;
+}
+.partner__item:hover img {
+  opacity: 1;
+}
+
+.partner__item:active img {
+  opacity: 0.2;
+}
+
 /* contact */
 
 .contact {
@@ -442,7 +453,7 @@ section {
   align-items: center;
 
   max-width: 260px;
-  height: 85px;
+  height: 65px;
 
   box-sizing: border-box;
   gap: 0px;
@@ -460,12 +471,19 @@ section {
   box-sizing: border-box;
   gap: 10px;
 
-  padding: 10px 20px;
+  padding: 10px 12px;
+}
+
+.range__value-cover {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .range__value {
   font-size: 16px;
-  font-weight: 500;
+  line-height: 22px;
+  font-weight: 400;
   display: inline-block;
 
   text-align: center;
@@ -489,10 +507,39 @@ section {
   margin-bottom: 10px;
 }
 
+.section-fieldset label {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+.span-radio {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 5px solid #dad9d9;
+  border-radius: 50%;
+  position: relative; /* Для позиціонування внутрішнього елемента */
+}
 .features-fieldset {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.radio-input:checked + .span-radio::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: #dad9d9; /* Колір точки */
+  border-radius: 50%;
+  position: absolute;
+  top: 21%;
+  left: 21%;
 }
 
 .features-fieldset legend {
@@ -500,6 +547,45 @@ section {
   line-height: 30px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+/* Ховер на елемент <a> */
+.header__nav-item a:hover .header__logo-link path {
+  fill: rgba(0, 0, 0, 0.7); /* Колір при наведенні */
+}
+
+/* Активний стан на <a> */
+.header__nav-item a:active .header__logo-link path {
+  fill: rgba(0, 0, 0, 0.3); /* Колір при кліку */
+}
+
+.checkbox-span {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  /* background-color: #fff;
+  border: 3px solid #dad9d9;
+  border-radius: 3px;
+  position: relative; */
+
+  background-image: url(../img/checkbox-off.png);
+}
+
+input[type="checkbox"]:checked + .checkbox-span::after {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  width: 27px;
+  height: 23px;
+  margin-right: 10px;
+  /* background-color: #fff;
+  border: 3px solid #dad9d9;
+  border-radius: 3px;
+  position: relative; */
+
+  background-image: url(../img/checkbox-on.png);
 }
 
 .fiters__btn {
@@ -525,9 +611,23 @@ section {
   gap: 20px;
 }
 
+.sorting__item .link {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .sorting__btn-cover {
   display: flex;
   gap: 10px;
+}
+
+.sorting__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.go-down {
+  margin-right: -8px;
 }
 
 /* goods */
@@ -536,10 +636,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-}
-
-.goods__item {
-  width: 360px;
 }
 
 .goods__btn-slider-list {
@@ -559,5 +655,89 @@ section {
   height: 15px;
   border: none;
   border-radius: 50%;
+  background-color: #fff;
+}
+
+.goods__item {
+  width: 360px;
+  position: relative;
+}
+
+.goods__inform-cover {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+
+  padding: 34px 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 230px;
+
+  background-color: #eeeeee;
+}
+.goods__inform-cover p {
+  text-align: center;
+  color: #666666;
+  line-height: 18px;
+}
+
+.goods__buy-btn {
+  max-width: 200px;
+}
+
+/* pagination */
+
+.pagination__cover {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination__item .link {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+
+  text-align: center;
+  line-height: 42px;
+
+  background-color: #f8f8f8;
+  border: 6px solid #f8f8f8;
+  border-radius: 3px;
+  outline: none;
+}
+
+.pagination__item .link:hover {
+  background-color: #fff;
+}
+
+.pagination__btn {
+  display: block;
+  width: 252px;
+  height: 52px;
+  padding: 0;
+
+  text-align: center;
+  line-height: 42px;
+
+  background-color: #f8f8f8;
+  border: 6px solid #f8f8f8;
+  border-radius: 3px;
+  outline: none;
+}
+
+.pagination__btn:hover {
   background-color: #fff;
 }
