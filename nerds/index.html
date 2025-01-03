@@ -144,7 +144,7 @@
             />
             <h3 class="advantages__title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="btn advantages__btn">ЗАКАЗАТЬ</button>
+            <button class="btn advantages__btn green-btn">ЗАКАЗАТЬ</button>
           </li>
           <li class="advantages__item">
             <img
@@ -154,7 +154,7 @@
             />
             <h3 class="advantages__title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="btn advantages__btn">ЗАКАЗАТЬ</button>
+            <button class="btn advantages__btn yellow-btn">ЗАКАЗАТЬ</button>
           </li>
         </ul>
       </section>
@@ -293,6 +293,51 @@
       </div>
     </footer>
 
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="modal__cover">
+        <div class="modal__wrapper">
+          <div class="modal__wrapper-close">
+            <button class="modal__close"></button>
+          </div>
+          <h2 class="modal__title">Напишите нам</h2>
+          <form action="#" class="modal__form">
+            <label for="modal__name">
+              Ваше имя:
+              <input
+                type="text"
+                class="modal__input"
+                id="modal__name"
+                required
+              />
+              <span class="modal__name-placeholder">Ваше имя</span>
+            </label>
+            <label for="modal__email">
+              Ваш e-mail:
+              <input
+                type="email"
+                class="modal__input"
+                id="modal__email"
+                required
+              />
+              <span class="modal__name-placeholder">Ваш email</span>
+            </label>
+
+            <label class="modal__textarea-lable" for="modal__textarea">
+              Текст письма:
+              <textarea
+                name=""
+                id="modal__textarea"
+                cols="30"
+                rows="10"
+                class="modal__textarea"
+                required
+              ></textarea>
+              <span class="modal__name-placeholder">Ваше сообщение</span>
+            </label>
+            <button class="modal__btn btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
