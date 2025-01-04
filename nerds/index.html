@@ -78,7 +78,7 @@
         <div class="slider__cover">
           <div class="slider__wrapper">
             <ul class="slider__list">
-              <li class="slider-item">
+              <li class="slider-item sl-1">
                 <img src="./img/slide1.png" alt="" class="slider__img" />
                 <div class="slider__text-cover">
                   <strong>Долго, дорого, скрупулезно.</strong>
@@ -89,7 +89,7 @@
                   <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
                 </div>
               </li>
-              <li class="slider-item visually-hidden">
+              <li class="slider-item sl-2 visually-hidden">
                 <img src="./img/slide2.png" alt="" class="slider__img" />
                 <div class="slider__text-cover">
                   <strong>Любим математику как никто другой</strong>
@@ -100,7 +100,7 @@
                   <button class="slider__btn btn">УЗНАТЬ БОЛЬШЕ</button>
                 </div>
               </li>
-              <li class="slider-item visually-hidden">
+              <li class="slider-item sl-3 visually-hidden">
                 <img src="./img/slide3.png" alt="" class="slider__img" />
                 <div class="slider__text-cover">
                   <strong>Только ночь, только хардкор</strong>
@@ -115,9 +115,15 @@
           </div>
           <div class="slider__controls">
             <ul class="slider__controls-list">
-              <li class="slider__controls-item"><button></button></li>
-              <li class="slider__controls-item"><button></button></li>
-              <li class="slider__controls-item"><button></button></li>
+              <li class="slider__controls-item">
+                <button class="btn-sl sl-btn-1 btn-sl-cheked"></button>
+              </li>
+              <li class="slider__controls-item">
+                <button class="btn-sl sl-btn-2"></button>
+              </li>
+              <li class="slider__controls-item">
+                <button class="btn-sl sl-btn-3"></button>
+              </li>
             </ul>
           </div>
         </div>
@@ -235,7 +241,7 @@
           <a href="tel:+7 (812) 275-75-75" class="link"
             >тел. +7 (812) 275-75-75</a
           >
-          <button class="btn">Напишите нам</button>
+          <button class="btn contact-btn">Напишите нам</button>
         </div>
       </section>
     </main>
@@ -293,14 +299,18 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal visually-hidden">
       <div class="modal__cover">
         <div class="modal__wrapper">
           <div class="modal__wrapper-close">
             <button class="modal__close"></button>
           </div>
           <h2 class="modal__title">Напишите нам</h2>
-          <form action="#" class="modal__form">
+          <form
+            class="modal__form"
+            method="post"
+            action="https://echo.htmlacademy.ru/"
+          >
             <label for="modal__name">
               Ваше имя:
               <input
@@ -334,10 +344,13 @@
               ></textarea>
               <span class="modal__name-placeholder">Ваше сообщение</span>
             </label>
-            <button class="modal__btn btn">Отправить</button>
+            <button type="submit" class="modal__btn btn">Отправить</button>
           </form>
         </div>
       </div>
     </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

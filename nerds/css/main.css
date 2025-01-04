@@ -1,3 +1,18 @@
+@keyframes modal-error-frame {
+  10% {
+    transform: rotate(45deg), translateX(10px);
+  }
+  50% {
+    transform: rotate(90deg), translateX(100px);
+  }
+  70% {
+    transform: rotate(-90deg), translateX(-10px);
+  }
+  100% {
+    transform: rotate(-45deg), translateX(-100px);
+  }
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../font/roboto.woff), url(../font/roboto.woff2);
@@ -20,6 +35,15 @@
 }
 
 /* global  */
+.modal-error {
+  display: block;
+  background-color: #d7373b;
+
+  animation-name: modal-error-frame;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-delay: 1s;
+}
 
 .visually-hidden {
   position: absolute; /* Виводимо елемент з потоку документа */
@@ -243,12 +267,22 @@ section {
   left: 50%;
 }
 
-.slider__controls-item button {
+.btn-sl {
   width: 20px;
   height: 20px;
   border: none;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.btn-sl:hover,
+.btn-sl.btn-sl:focus {
+  border: 1px solid red;
+}
+
+.btn-sl:active,
+.btn-sl-cheked {
+  background-color: #d7373b;
 }
 
 /* advantages */
@@ -631,6 +665,10 @@ section {
 }
 
 .modal__input:focus + .modal__name-placeholder {
+  display: none;
+}
+
+.modal__name-placeholder.hidden {
   display: none;
 }
 

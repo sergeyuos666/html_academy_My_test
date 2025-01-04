@@ -393,6 +393,7 @@
           </section>
         </div>
       </div>
+
       <section class="contact">
         <h2 class="visually-hidden">map</h2>
         <div class="container-map">
@@ -407,7 +408,7 @@
           <a href="tel:+7 (812) 275-75-75" class="link"
             >тел. +7 (812) 275-75-75</a
           >
-          <button class="btn">Напишите нам</button>
+          <button class="btn contact-btn">Напишите нам</button>
         </div>
       </section>
     </main>
@@ -464,5 +465,58 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <div class="modal visually-hidden">
+      <div class="modal__cover">
+        <div class="modal__wrapper">
+          <div class="modal__wrapper-close">
+            <button class="modal__close"></button>
+          </div>
+          <h2 class="modal__title">Напишите нам</h2>
+          <form
+            method="post"
+            action="https://echo.htmlacademy.ru/"
+            class="modal__form"
+          >
+            <label for="modal__name">
+              Ваше имя:
+              <input
+                type="text"
+                class="modal__input"
+                id="modal__name"
+                required
+              />
+              <span class="modal__name-placeholder">Ваше имя</span>
+            </label>
+            <label for="modal__email">
+              Ваш e-mail:
+              <input
+                type="email"
+                class="modal__input"
+                id="modal__email"
+                required
+              />
+              <span class="modal__name-placeholder">Ваш email</span>
+            </label>
+
+            <label class="modal__textarea-lable" for="modal__textarea">
+              Текст письма:
+              <textarea
+                name=""
+                id="modal__textarea"
+                cols="30"
+                rows="10"
+                class="modal__textarea"
+                required
+              ></textarea>
+              <span class="modal__name-placeholder">Ваше сообщение</span>
+            </label>
+            <button type="submit" class="modal__btn btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
