@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>sedon-portfolio</title>
   </head>
   <body>
@@ -17,15 +23,15 @@
             <a href="#" class="header-nav__link link">ФОТО И ВИДЕО</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link"
-              ><img src="./img/Логотип.png" alt="" class="header-nav__ligo"
+            <a href="./index.html" class="header-nav__link link"
+              ><img src="./img/Логотип.png" alt="" class="header-nav__logo"
             /></a>
           </li>
           <li class="header-nav__item">
             <a href="#" class="header-nav__link link">КАРТА ШТАТА</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link">ИНФОРМАЦИЯ</a>
+            <a href="./hotels.html" class="header-nav__link link">Гостинница</a>
           </li>
         </ul>
       </nav>
@@ -140,8 +146,26 @@
           </ul>
         </div>
         <div class="sorting-second-cover">
-          <button class="sorting-btn up"></button>
-          <button class="sorting-btn down"></button>
+          <button class="sorting-btn up">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="10"
+              viewBox="0 0 11 10"
+            >
+              <path fill="#231F20" d="M5.5 0L0 10h11z" />
+            </svg>
+          </button>
+          <button class="sorting-btn down">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="10"
+              viewBox="0 0 11 10"
+            >
+              <path fill="#231F20" d="M5.5 10L0 0h11" />
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -149,20 +173,213 @@
         <ul class="hotel__list">
           <li class="hotel__item">
             <div class="hotel__item-first-cover">
-              <img src="" alt="" class="hotel__item-img">
-              <div>
-                <h3></h3>
-                <p></p>
-                <div>
-                  <button></button>
-                  <button></button>
+              <img src="./img/1.png" alt="" class="hotel__item-img" />
+              <div class="hotel__text-cover">
+                <h3 class="hotel__text-title">Amara Resort & Spa</h3>
+                <p class="hotel__text-descripe">
+                  Гостиница <span>ОТ 4000 Р.</span>
+                </p>
+                <div class="hotel__btn-cover">
+                  <button class="hotel__btn-more">ПОДРОБНЕЕ</button>
+                  <button class="hotel__btn-order">ЗАБРОНИРОВАТЬ</button>
                 </div>
               </div>
             </div>
-            <div class="hotel__item-second-cover"></div>
+            <div class="hotel__assessment-cover">
+              <ul class="hotel__assessment-list">
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+              <div class="hotel__rank-cover">
+                <p class="hotel__rank-name">
+                  Рейтинг:
+                  <span class="hotel__rank-number">8,5</span>
+                </p>
+              </div>
+            </div>
           </li>
-          <li class="hotel__item"></li>
-          <li class="hotel__item"></li>
+          <li class="hotel__item">
+            <div class="hotel__item-first-cover">
+              <img
+                src="./img/hotels/Layer 89 copy.png"
+                alt=""
+                class="hotel__item-img"
+              />
+              <div class="hotel__text-cover">
+                <h3 class="hotel__text-title">Desert Quail Inn</h3>
+                <p class="hotel__text-descripe">
+                  Мотель <span>ОТ 3000 Р.</span>
+                </p>
+                <div class="hotel__btn-cover">
+                  <button class="hotel__btn-more">ПОДРОБНЕЕ</button>
+                  <button class="hotel__btn-order">ЗАБРОНИРОВАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="hotel__assessment-cover">
+              <ul class="hotel__assessment-list">
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+              <div class="hotel__rank-cover">
+                <p class="hotel__rank-name">
+                  Рейтинг:
+                  <span class="hotel__rank-number">5,5</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="hotel__item">
+            <div class="hotel__item-first-cover">
+              <img src="./img/hotels/3.png" alt="" class="hotel__item-img" />
+              <div class="hotel__text-cover">
+                <h3 class="hotel__text-title">Villas at Poco Diablo</h3>
+                <p class="hotel__text-descripe">
+                  Апартаменты <span>ОТ 2000 Р.</span>
+                </p>
+                <div class="hotel__btn-cover">
+                  <button class="hotel__btn-more">ПОДРОБНЕЕ</button>
+                  <button class="hotel__btn-order">ЗАБРОНИРОВАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="hotel__assessment-cover">
+              <ul class="hotel__assessment-list">
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+                <li class="hotel__assessment-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                  >
+                    <path
+                      fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+              <div class="hotel__rank-cover">
+                <p class="hotel__rank-name">
+                  Рейтинг:
+                  <span class="hotel__rank-number">9,2</span>
+                </p>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
     </main>

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>sedon-portfolio</title>
   </head>
   <body>
@@ -17,15 +23,15 @@
             <a href="#" class="header-nav__link link">ФОТО И ВИДЕО</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link"
-              ><img src="./img/Логотип.png" alt="" class="header-nav__ligo"
+            <a href="./index.html" class="header-nav__link link"
+              ><img src="./img/Логотип.png" alt="" class="header-nav__logo"
             /></a>
           </li>
           <li class="header-nav__item">
             <a href="#" class="header-nav__link link">КАРТА ШТАТА</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link">ИНФОРМАЦИЯ</a>
+            <a href="./hotels.html" class="header-nav__link link">Гостинница</a>
           </li>
         </ul>
       </nav>
@@ -37,11 +43,19 @@
       <section class="intro">
         <div class="intro__cover">
           <div class="intro__cover-text">
-            <img src="./img/Welcome.png" alt="" />
-            <img src="./img/to the gorgeous.png" alt="" />
+            <img src="./img/Welcome.png" alt="" class="intro__wellcome-img" />
+            <img
+              src="./img/to the gorgeous.png"
+              alt=""
+              class="intro__gorgeous-img"
+            />
           </div>
-          <img src="./img/Sedona.png" alt="" />
-          <img src="./img/Because the Grand  Canyon sucks!.png" alt="" />
+          <img src="./img/Sedona.png" alt="" class="intro__sedona-img" />
+          <img
+            src="./img/Because the Grand  Canyon sucks!.png"
+            alt=""
+            class="intro__canyon-img"
+          />
         </div>
         <div class="intro-shape">
           <img src="./img/Shape 1 copy 3.png" alt="" />
@@ -49,12 +63,14 @@
       </section>
 
       <section class="about-sedona">
-        <strong class="about-sedona__mein-text"
-          >СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
-        </strong>
-        <p class="about-sedona__text">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
+        <div class="about-sedona__cover">
+          <strong class="about-sedona__mein-text"
+            >СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
+          </strong>
+          <p class="about-sedona__text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
       </section>
 
       <section class="cause-first">
@@ -155,28 +171,37 @@
           <li class="other-cause__item">
             <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p>№3</p>
-            <p>ВСЕ достопримечательности находятся рядом</p>
+            <p class="other-cause__description">
+              ВСЕ достопримечательности находятся рядом
+            </p>
           </li>
           <li class="other-cause__item">
             <h3>КРАСИВАЯ ДОРОГА</h3>
             <p>№4</p>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем Не далеко</p>
+            <p class="other-cause__description">
+              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем Не далеко
+            </p>
           </li>
           <li class="other-cause__item">
             <h3>МАЛО ТУРИСТОВ</h3>
             <p>№5</p>
-            <p>Большинство едет в гранд каньон и толпися там</p>
+            <p class="other-cause__description">
+              Большинство едет в гранд каньон и толпися там
+            </p>
           </li>
         </ul>
       </section>
 
       <section class="describe">
-        <strong class="describe__meine-text">ЗАИНТЕРЕСОВАЛИСЬ? </strong>
-        <p class="describe__text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в седоне
-        </p>
-        <button class="describe__btn btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <div class="describe__cover">
+          <strong class="describe__meine-text">ЗАИНТЕРЕСОВАЛИСЬ? </strong>
+
+          <p class="describe__text">
+            Укажите предполагаемые даты поездки, <br />
+            и мы покажем вам лучшие предложения гостиниц в седоне
+          </p>
+          <button class="describe__btn btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        </div>
       </section>
 
       <section class="map">
