@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="inner-page">
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html" class="header__logo">
+          <img src="./img/logo-desktop.svg.png" alt="" />
+        </a>
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="./index.html" class="link">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="./catalog.html" class="link">Каталог продукции</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="./form.html" class="link header__link-this"
+              >Подбор программы</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="inner-title form-page-title">Подбор программы</h1>
+
+      <section class="filter">
+        <form action="" class="filter__form">
+          <p class="filter__form-first-info">
+            Заполните анкету и мы подберем программу питания для вашего кота
+          </p>
+          <div class="filter__form-first-cover">
+            <fieldset class="fieldset filter__form-info-cat">
+              <legend></legend>
+              <label for="cat-name" class="filter__form-lable">
+                <span class="filter__form-lable-span">Имя:*</span>
+                <input
+                  type="text"
+                  class="filter__form-input"
+                  id="cat-name"
+                  placeholder="Radik"
+                />
+              </label>
+              <label for="cat-weight" class="filter__form-lable">
+                <span class="filter__form-lable-span">Вес (кг):*</span>
+                <input
+                  type="number"
+                  class="filter__form-input"
+                  id="cat-weight"
+                  placeholder="7"
+                />
+              </label>
+              <label for="cat-age" class="filter__form-lable">
+                <span class="filter__form-lable-span">Возраст (лет):</span>
+                <input
+                  type="number"
+                  class="filter__form-input"
+                  id="cat-age"
+                  placeholder="7"
+                />
+              </label>
+            </fieldset>
+
+            <fieldset class="fieldset filter__form-program">
+              <legend></legend>
+              <label for="lose-weight">
+                <input
+                  type="radio"
+                  name="cat"
+                  id="lose-weight"
+                  class="radion-input visually-hidden"
+                  checked
+                />
+                <span class="radio-span"></span>
+                Похудение
+              </label>
+              <label bel for="mass-gain">
+                <input
+                  type="radio"
+                  name="cat"
+                  id="mass-gain"
+                  class="radion-input visually-hidden"
+                />
+                <span class="radio-span"></span>
+                Набір маси
+              </label>
+              <label for="know">
+                <input
+                  type="radio"
+                  name="know"
+                  id="know"
+                  class="radion-input visually-hidden"
+                />
+                <span class="radio-span"></span>
+                Не знаю (Нужен ваш совет)
+              </label>
+            </fieldset>
+          </div>
+
+          <fieldset class="fieldset filter__form-info-owner">
+            <legend class="fieldset-title">
+              <span>Контактные данные (владельца кота)</span>
+            </legend>
+
+            <label for="email" class="filter__form-info-owner-label">
+              E-mail:*
+              <span class="filter__form-info-owner-span"
+                >kuklachev@gmail.com</span
+              >
+              <input
+                type="email"
+                name="know"
+                id="email"
+                class="filter__form-info-owner-input"
+              />
+              <svg
+                version="1.1"
+                id="Layer_5555"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 17 13"
+                style="enable-background: new 0 0 17 13"
+                xml:space="preserve"
+                width="17px"
+                hight="13px"
+                class="svg-one"
+              >
+                <path
+                  d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"
+                />
+              </svg>
+            </label>
+            <label for="telefon" class="filter__form-info-owner-label">
+              Телефон:*
+              <span class="filter__form-info-owner-span phone"
+                >8 (960) 900-60-90</span
+              >
+              <input
+                type="tel"
+                name="know"
+                id="telefon"
+                class="filter__form-info-owner-input"
+              />
+              <svg
+                version="1.1"
+                id="Layer_333"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 20 20"
+                style="enable-background: new 0 0 20 20"
+                xml:space="preserve"
+                width="20px"
+                hight="20px"
+              >
+                <path
+                  d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"
+                />
+                <path
+                  d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+	c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+	C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+	C7.8,20,8.1,19.7,8.1,19.4z"
+                />
+              </svg>
+            </label>
+          </fieldset>
+
+          <fieldset class="fieldset filter__form-сomments">
+            <legend class="fieldset-title">
+              <span class="title-span">Комментарий</span>
+            </legend>
+            <label for="comments">
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+                class="filter__form-textarea"
+              ></textarea>
+              <span class="span-placeholder"
+                >Расскажите обо всех повадках кота</span
+              >
+            </label>
+          </fieldset>
+
+          <fieldset class="fieldset filter__form-additional">
+            <legend class="fieldset-title">
+              <span>Дополнительно</span>
+            </legend>
+            <div class="form__checkbox-cover">
+              <label for="sugar-substitute">
+                <input
+                  type="checkbox"
+                  name="cat"
+                  id="sugar-substitute"
+                  class="input-checkbox visually-hidden"
+                  checked
+                />
+                Сахарозаменитель
+                <span class="checkbox-span"></span>
+              </label>
+              <label for="water">
+                <input
+                  type="checkbox"
+                  name="cat"
+                  id="water"
+                  class="input-checkbox visually-hidden"
+                />
+                Питьевая вода
+                <span class="checkbox-span"></span>
+              </label>
+              <label for="milk">
+                <input
+                  type="checkbox"
+                  name="cat"
+                  id="milk"
+                  class="input-checkbox visually-hidden"
+                />
+                Молоко
+                <span class="checkbox-span"></span>
+              </label>
+              <label for="vitamin">
+                <input
+                  type="checkbox"
+                  name="cat"
+                  id="vitamin"
+                  class="input-checkbox visually-hidden"
+                />
+                Витамины
+                <span class="checkbox-span"></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-btn-cover">
+            <button type="submit" class="btn form-btn">Отправить заявку</button>
+            <span>* — Обязательные поля</span>
+          </div>
+        </form>
+      </section>
+
+      <section class="map">
+        <img class="map__img" src="./img/map.png" alt="" />
+        <img class="map__img-mark" src="./img/map-pin.png.png" alt="" />
+        <div class="map__text-cover">
+          <strong class="map__text-appeal"
+            >приглашаем к сотрудничеству дилеров!</strong
+          >
+          <address class="map__text-address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__cover">
+        <a href="./index.html" class="footer__logo">
+          <img src="./img/footer-logo.svg.png" alt="" />
+        </a>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="link footer__icon-link">
+              <svg
+                id="Layer_32"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 15.76"
+                width="30px"
+              >
+                <path
+                  d="M23.94,15.76a4.05,4.05,0,0,1-2.08-.63,10.17,10.17,0,0,1-1.78-1.53c-.44-.44-1.17-1.18-1.45-1.18s-.48.92-.47,1.57a1.7,1.7,0,0,1-.47,1.21,2.26,2.26,0,0,1-1.22.5H14.55a11.29,11.29,0,0,1-7.43-3C3.44,9.33.28,2.89.15,2.61A1.34,1.34,0,0,1,.3,1.13,2.07,2.07,0,0,1,1.66.65l4.08,0h.12a2.47,2.47,0,0,1,1,.35,1.77,1.77,0,0,1,.62.73A22.09,22.09,0,0,0,8.92,4.4c1.31,2,1.89,2.45,2.1,2.56a8.12,8.12,0,0,0,.19-2.87A2.58,2.58,0,0,0,11,2.81a1.33,1.33,0,0,0-.77-.29l-.73-.69C9.36,1.17,10.09.6,10.6.38A8.73,8.73,0,0,1,13.75,0h.71A9,9,0,0,1,16.61.2c1.7.36,1.64,1.73,1.57,3.31,0,.46-.05,1-.05,1.62,0,.15,0,.31,0,.48a4.11,4.11,0,0,0,.09,1.3,9.09,9.09,0,0,0,2.07-2.48,20.39,20.39,0,0,0,1.52-2.8h0A1.59,1.59,0,0,1,23.42.68l4.27,0a2,2,0,0,1,.38,0c1,0,1.59.29,1.83.85s.17,1.66-2.36,4.61l-1,1.13a6.87,6.87,0,0,0-1.23,1.59A6.52,6.52,0,0,0,26.58,10a14,14,0,0,1,3,3.07,1.6,1.6,0,0,1,.26,1.68,2.3,2.3,0,0,1-1.88,1l-3.79.05Zm-5.31-4.84c.9,0,1.68.78,2.51,1.62a8.63,8.63,0,0,0,1.5,1.3,2.63,2.63,0,0,0,1.4.42h.1l3.8-.05a1.43,1.43,0,0,0,.54-.14l-.1-.16a13.22,13.22,0,0,0-2.68-2.72c-1.19-1-1.8-1.47-1.87-2.25s.49-1.43,1.61-2.7l1-1.11a10.73,10.73,0,0,0,2.05-2.95,5.66,5.66,0,0,0-.67,0l-4.37,0a.55.55,0,0,0-.24,0,20.5,20.5,0,0,1-1.65,3.05c-1.89,2.82-2.78,3.2-3.41,3.2a1.19,1.19,0,0,1-.56-.14c-1-.57-1-1.84-.94-2.76,0-.15,0-.3,0-.43,0-.65,0-1.21.05-1.69.08-1.68,0-1.69-.38-1.78a8.56,8.56,0,0,0-1.86-.16h-.69a13,13,0,0,0-1.9.1,1.18,1.18,0,0,1,.25.25A3.81,3.81,0,0,1,12.71,4c.13,1.65.06,3.8-1,4.31a1.26,1.26,0,0,1-.6.14c-.93,0-1.85-.88-3.42-3.27A22.89,22.89,0,0,1,6.08,2.34L6,2.24a1.21,1.21,0,0,0-.32-.11l-4,0H1.61C2.2,3.35,5,8.75,8.13,11.58a9.94,9.94,0,0,0,6.42,2.62H16.4a1,1,0,0,0,.27-.1s0,0,0-.1c0-.26,0-2.59,1.58-3A1.67,1.67,0,0,1,18.63,10.92Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="link footer__icon-link"
+              ><svg
+                id="Layer_2"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 22.99 23"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #231f20;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M17,1.5A4.51,4.51,0,0,1,21.49,6V17A4.51,4.51,0,0,1,17,21.5H6A4.51,4.51,0,0,1,1.5,17V6A4.51,4.51,0,0,1,6,1.5H17M17,0H6A6,6,0,0,0,0,6V17a6,6,0,0,0,6,6H17a6,6,0,0,0,6-6V6a6,6,0,0,0-6-6Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M11.49,7.08a4.43,4.43,0,1,1-4.43,4.43,4.43,4.43,0,0,1,4.43-4.43m0-1.5a5.93,5.93,0,1,0,5.93,5.93,5.93,5.93,0,0,0-5.93-5.93Z"
+                />
+                <circle class="cls-1" cx="17.63" cy="5.38" r="1.34" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="link footer__icon-link">
+              <svg
+                id="Layer_3"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 13.52 27.75"
+              >
+                <path
+                  d="M9.53,27.75H2.72V14.84H0V8.47H2.63c-.2-2.89.3-5,1.52-6.44A6.21,6.21,0,0,1,8.74,0h4.78V6.15H9.76a6.55,6.55,0,0,0-.25,2.32h4v6.38h-4Zm-5.31-1.5H8V13.34h4V10H8l0-.73c0-2,0-3.79,1-4.46l.19-.13H12V1.5H8.78A4.67,4.67,0,0,0,5.29,3c-1,1.23-1.41,3.29-1.1,6.14l.1.83H1.5v3.38H4.22Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="copiration-cover">
+          <a href="" class="link footer__icon-link"
+            >HTML Academy
+            <svg
+              id="Layer_123"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 26.95 34.09"
+            >
+              <path
+                d="M13.62,0l-.15,0L0,1.41V26.07l13.47,8,13.43-8,.05,0V1.41ZM25,12.13,13.5,5.33v-.1l-.08,0-.09-.06v.11L1.92,12.12v-9L13.47,1.93,25,3.15v9ZM13.41,6.79,24.92,13.5l-4.48,2.64-7.09-4.22v1.41l5.9,3.52-.86.5-5-3v1.42l3.82,2.27-.78.53-3-1.79V18.2l1.85,1.09-1.8,1.08L2,13.62ZM1.92,15.13l11.42,6.79v1L5.41,18.23v1.42l8,4.8,0,1.07-8-4.74V22.2l8,4.82,0,0,8.15-4.87V17L25,15V25L13.47,31.85,1.92,25Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

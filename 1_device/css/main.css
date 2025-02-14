@@ -99,6 +99,7 @@ ul {
 .link:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .visually-hidden {
   position: absolute; /* Виводимо елемент з потоку документа */
   width: 1px; /* Мінімізуємо розмір */
